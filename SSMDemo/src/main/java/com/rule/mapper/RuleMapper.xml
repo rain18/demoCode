@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rule.mapper.RuleMapper">
+    <resultMap id="BaseResultMap" type="com.rule.entity.RuleEntity">
+        <constructor>
+            <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+            <arg column="userId" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+            <arg column="crontab" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="logExp" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="logTopic" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="createTime" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+            <arg column="isEnabled" jdbcType="BIT" javaType="java.lang.Boolean"/>
+            <arg column="updateTime" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+            <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="description" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="clientId" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+            <arg column="rules" jdbcType="LONGVARCHAR" javaType="java.lang.String"/>
+        </constructor>
+    </resultMap>
+
+    <!-- useGeneratedKeys="true" keyProperty="id" 返回主键 -->
+    <insert id="add" parameterType="com.rule.entity.RuleEntity"
+            useGeneratedKeys="true" keyProperty="id">
+
+    </insert>
+
+    <select id="getAllByMap" parameterType="Map" resultMap="BaseResultMap">
+        SELECT * FROM rule WHERE userId=#{userId}
+        <!--<if test="">-->
+            <!-- 多个if条件，根据map里的条件查询 -->
+        <!--</if>-->
+    </select>
+
+</mapper>
