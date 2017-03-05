@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SSH" uuid="622c5219-8e11-46d2-9af1-549f34d83cf5">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>rule_engine:</introspection-scope>
+      <resolve-scope>rule_engine:</resolve-scope>
+    </data-source>
+  </component>
+</project>
