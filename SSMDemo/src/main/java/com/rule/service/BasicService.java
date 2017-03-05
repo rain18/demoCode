@@ -1,5 +1,7 @@
 package com.rule.service;
 
+import com.github.pagehelper.PageHelper;
+import com.rule.entity.Page;
 import com.rule.mapper.BasicMapper;
 import org.apache.log4j.Logger;
 
@@ -50,10 +52,11 @@ public abstract class BasicService<T,PK> {
         }
     }
 
-    public List<T> getAll(Map<String, Object> searchMap) {
+    public Page<T> getAll(int pageNum, int pageSize) {
         try {
-            List<T> result = getMapper().getAll(searchMap);
-            return result;
+            PageHelper.startPage(pageNum, pageSize);
+            List<T> result = getMapper().getAll();
+            return new Page<>(result);
         } catch (Exception e) {
             e.printStackTrace();
             logger.error(e.getMessage());

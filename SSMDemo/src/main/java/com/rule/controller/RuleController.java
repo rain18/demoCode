@@ -1,5 +1,6 @@
 package com.rule.controller;
 
+import com.rule.entity.Page;
 import com.rule.entity.RuleEntity;
 import com.rule.service.RuleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +26,12 @@ public class RuleController {
 
     @RequestMapping(value = "/",method = {RequestMethod.GET})
     @ResponseBody
-    public List<RuleEntity> getAll(@RequestParam(value = "userId",required = true) Integer userId) {
+    public Page<RuleEntity> getAll(@RequestParam(value = "userId",required = true) Integer userId,
+                                   @RequestParam(value = "pageNum",required = false,defaultValue = "1") int pageNum,
+                                   @RequestParam(value = "pageSize", required = false,defaultValue = "10") int pageSize) {
         Map<String,Object> searchMap = new HashMap<>();
         searchMap.put("userId",userId);
-        List<RuleEntity> result = ruleService.getAll(searchMap);
+        Page<RuleEntity> result = ruleService.getAllByMap(searchMap,pageNum,pageSize);
         return result;
     }
 

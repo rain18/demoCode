@@ -172,6 +172,14 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.3.5.RELEASE</version>
         </dependency>
+
+        <!--mybatis 分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>SSMDemo</finalName>

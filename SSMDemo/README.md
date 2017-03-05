@@ -33,4 +33,19 @@
  > 1. mybatis用起来还是非常方便，更过的是写sql语句，关注业务逻辑。其中实体类、映射文件、接口什么的基本是重复性工作，此时能有自动生成软件还是是非方便的
    2. 还要说的是慎用，当你加了数据库表时，再次运行此插件时，如果你没有注释掉之前的那张表，就会覆盖掉之前的实体类（一般自动生成实体类还是要修改下的）
 
-## mybatis 查询分页插件
+## mybatis 查询分页库
+ - 在pom中引入包
+ >该库时从物理层面实现了分页
+ 
+      <dependency>
+          <groupId>com.github.pagehelper</groupId>
+          <artifactId>pagehelper</artifactId>
+          <version>5.0.0</version>
+      </dependency>
+      
+ - 使用
+ > 对该库进行了进一步的封装，得到Page这个实体类，如下调用，pageNum是第几页，pageSize是每页的个数
+ 
+     PageHelper.startPage(pageNum, pageSize);
+     List<RuleEntity> result = ruleMapper.getAllByMap(searchMap);
+     return new Page<>(result);
