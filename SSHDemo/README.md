@@ -16,13 +16,13 @@
 - maven 工程引入 jetty 运行
  > 选择ideal右上角的配置，选择"Edit Configurations"
  
- ![Edit Configurations](/imgs/maven1.png)
+ ![Edit Configurations](/SSHDemo/imgs/maven1.png)
  
  > 选择左上角的‘+’，然后‘1’中选择 Maven 
  > 在‘2’中添上名字，此时把旁边single instance only 打上勾
  > 在‘3’中写上运行命令‘jetty:run’
  
- <img></img>
+ ![Edit Configurations](/SSHDemo/imgs/maven2.png)
  
  > 运行时选择ideal右上工具栏的绿色三角，开始运行
  
