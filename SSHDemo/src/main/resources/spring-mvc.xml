@@ -42,4 +42,13 @@
         <property name="resolveLazily" value="true"/>
     </bean>
 
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="com.rule.controller/*"/>
+            <!--<mvc:exclude-mapping path=""/>-->  <!-- 不做拦截 -->
+            <bean class="com.rule.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
