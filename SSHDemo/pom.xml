@@ -191,8 +191,6 @@
             <artifactId>commons-fileupload</artifactId>
             <version>1.3.1</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -210,5 +208,14 @@
                 <directory>${basedir}/src/main/resources</directory>
             </resource>
         </resources>
+
+        <!-- jetty运行环境 -->
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.10.v20160621</version>
+            </plugin>
+        </plugins>
     </build>
 </project>
