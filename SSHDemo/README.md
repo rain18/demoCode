@@ -1,4 +1,4 @@
-# Maven 搭建SSH架构
+# Maven 搭建SSH框架
 
 ## 基础配置
 
