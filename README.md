@@ -15,3 +15,13 @@
   2. 引入了分页的库，实现物理上的分页查询
    
   3. 配置文件操作，方便修改处理
+
+
+## Django 基础Demo
+ > 这是第一个关于Django框架的一个简单[demo](https://github.com/rain18/django_ebusiness)
+ 
+ 1. 使用Django 框架，基于文件requestment一键安装库
+ 
+ 2. 数据库连接使用restframework，进行ORM映射
+ 
+ 3. 可以进行多条件查询
