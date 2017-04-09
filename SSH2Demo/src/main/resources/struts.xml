@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 指定由sping负责action的创建 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 所有匹配*.action的都由Struts2处理 -->
+    <constant name="struts.action.extension" value="action"/>
+    <!-- 是否开启开发模式 -->
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
+    <constant name="struts.i18n.reload" value="true"/>
+    <!-- 文件上传的最大值 -->
+    <constant name="struts.multipart.maxSize" value="104857600"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.enable.SlashesInActionNames" value="false"/>
+    <!-- 是否允许标签 -->
+    <constant name="struts.tag.altSyntax" value="true"/>
+    <constant name="struts.dispatcher.parametersWorkaround" value="false"/>
+    <!-- 设置请求的后缀 -->
+    <!--<constant name="struts.action.extension" value="do,action"/>-->
+
+    <package name="default" namespace="/account" extends="json-default">
+        <action name="login" class="com.rule.Action.LoginAction">
+            <result name="success" type="redirect">${redirect_url}</result>
+            <!--<result name="success" type="redirect">${redirect_url}</result>-->
+            <result name="input" type="redirect">/views/error/404.jsp</result>
+        </action>
+        <action name="landing" class="com.rule.Action.LandingAction">
+            <result name="success" type="redirect">${redirect_url}</result>
+            <result name="input">/views/error/404.jsp</result>
+            <result name="error">/views/error/404.jsp</result>
+        </action>
+        <action name="logout" class="com.rule.Action.LogoutAction">
+            <result name="success" type="json"></result>
+            <result name="input" type="redirect">/error/404.jsp</result>
+        </action>
+    </package>
+
+</struts>

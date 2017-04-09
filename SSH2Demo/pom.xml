@@ -117,7 +117,6 @@
     </dependency>
     <!-- log end -->
 
-
     <!-- c3p0数据源 -->
     <dependency>
       <groupId>com.mchange</groupId>
@@ -169,6 +168,25 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
+    </dependency>
+
+    <!-- structs2 -->
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+      <version>${structs2.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-spring-plugin</artifactId>
+      <version>${structs2.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-config-browser-plugin</artifactId>
+      <version>${structs2.version}</version>
     </dependency>
 
     <!-- 文件上传 -->
