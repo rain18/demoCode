@@ -28,11 +28,11 @@
   
   
 ## Spring-Boot 框架
- > 最近要用做毕设的后端，比较简单，早就听说Spring-Boot快速开发，就用intellij 创建了一个[基于maven的Spring-Boot项目](https://github.com/rain18/demoCode/tree/master/SSMDemo)，大爱，Spring-Boot开发是在是太简单了，帮我们做了很多底层的东西。
+ > 最近要用做毕设的后端，比较简单，早就听说Spring-Boot快速开发，就用intellij 创建了一个[基于maven的Spring-Boot项目](https://github.com/rain18/spring-Boot)，大爱，Spring-Boot开发是在是太简单了，帮我们做了很多底层的东西。
    
-  1. 集成tomcat服务器，无需配置，直接运行
-   
-  2. 自动完成数据库dao以下的配置，只需配置简单的数据库信息即可使用
+  1. 集成tomcat服务器，无需配置，直接运行
+  
+  2. 自动完成数据库dao以下的配置，只需配置简单的数据库信息即可使用
 
 
 ## Django 基础Demo
