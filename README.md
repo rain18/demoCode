@@ -18,13 +18,21 @@
 
  
 ## SSM（sping+springMVC+Mybatis）框架
- > 近期做了一个SSM项020000 目，用intellij 创建了一个[基于maven的SSM Demo](https://github.com/rain18/demoCode/tree/master/SSMDemo)
+ > 近期做了一个SSM项目，用intellij 创建了一个[基于maven的SSM Demo](https://github.com/rain18/demoCode/tree/master/SSMDemo)
    
   1. 使用了mybatis，自动生成实体类和映射文件
    
   2. 引入了分页的库，实现物理上的分页查询
    
   3. 配置文件操作，方便修改处理
+  
+  
+## Spring-Boot 框架
+ > 最近要用做毕设的后端，比较简单，早就听说Spring-Boot快速开发，就用intellij 创建了一个[基于maven的Spring-Boot项目](https://github.com/rain18/demoCode/tree/master/SSMDemo)，大爱，Spring-Boot开发是在是太简单了，帮我们做了很多底层的东西。
+   
+  1. 集成tomcat服务器，无需配置，直接运行
+   
+  2. 自动完成数据库dao以下的配置，只需配置简单的数据库信息即可使用
 
 
 ## Django 基础Demo
