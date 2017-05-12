@@ -1,4 +1,4 @@
-# demoCode
+# Zrain Code
 
 ## SSH（sping+springMVC+hibernate）框架
  > SSH是当前非常流行的Java Web框架，结合之前做过的SSH项目，用intellij 创建了一个[基于maven的SSH项目](https://github.com/rain18/demoCode/tree/master/SSHDemo)，帮助熟悉环境配置流程
@@ -43,3 +43,6 @@
  2. 数据库连接使用restframework，进行ORM映射
  
  3. 可以进行多条件查询
+ 
+## Android 对按键进行全局监听
+ > 最近项目需要，要实现对手机按键全局监听，包括在锁频状态下
