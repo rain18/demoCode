@@ -1,6 +1,6 @@
 ## 搜索模态框
 
-''' html
+``` javascript
 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog"
          aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -77,4 +77,4 @@
             </div>
         </div>
     </div>
-'''
+```
